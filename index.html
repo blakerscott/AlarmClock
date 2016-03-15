@@ -2,12 +2,24 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Alarm Clock</title>
   </head>
   <body>
-    <h3>Well look at the time! </h3>
-      <h3 id="time"></h3>
+    <div class="container">
+      <h3>Well look at the time! </h3>
+        <h3 id="clockTime"></h3>
+         <br>
+          <form id="alarm" class="form-group">
+            <label for="alarm-time">When would you like to wake up?</label>
+            <input type="text" id="alarm-time" class="form-control"/>
+            <br>
+            <button type="submit" class="btn btn-danger">Set Alarm</button>
+          </form>
+        <h4 id ="confirm">Alarm was set for <span id="alarm-confirm"></span></h4>
+      <h1 id="alarm-sounding">ALARM ALARM ALARM!!!!</h1>
+    </div>
   </body>
 </html>
